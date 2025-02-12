@@ -1,0 +1,15 @@
+# Add zsh config files
+
+if [ -d $ZDOTDIR ]; then 
+	for file in $ZDOTDIR/*.zsh; do
+		[ -e $file ] || continue
+		source $file
+	done
+fi
+
+if [ -d $DOTFILES/shellrc/rc.d ]; then 
+	for file in $DOTFILES/shellrc/rc.d/*.sh; do
+		[ -e $file ] || continue
+		source $file
+	done
+fi

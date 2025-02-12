@@ -1,0 +1,22 @@
+# Inspired by Phantas0s zsh configs without using oh-my-zsh
+# https://thevaluable.dev/zsh-install-configure-mouseless/
+
+export DOTFILES="$HOME/.dotfiles"
+export TERM="rxvt-256color"
+
+# XDG Base Directory
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_DATA_HOME="$XDG_CONFIG_HOME/local/share"
+export XDG_CACHE_HOME="$XDG_CONFIG_HOME/cache"
+
+# Use neovim as editor and visual
+export EDITOR="nvim"
+export VISUAL="nvim"
+
+# ZSH Config env variables
+export ZDOTDIR="$XDG_CONFIG_HOME/zsh.d"
+export RCDIR="$XDG_CONFIG_HOME/rc.d"
+
+export HISTFILE="$ZDOTDIR/.zshistory"
+export HISTSIZE=10000
+export SAVEHIST=10000
