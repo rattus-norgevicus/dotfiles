@@ -34,7 +34,7 @@ link_file() {
 			if [ "$current_src" == "$src" ]; then
 				skip=true;
 			else
-				user "File $dest already exists: ($(basename "$src")), what do you want to do?\n\
+				echo "File $dest already exists: ($(basename "$src")), what do you want to do?\n\
 					[s] skip, [S] skip all, [o] overwrite, [O] overwrite all, [b] backup, [B] backup all?"
 									read -n 1 action < /dev/tty
 
