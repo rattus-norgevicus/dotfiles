@@ -1,1 +1,3 @@
 *.zshistory
+*.zcompdump
+*.zshrc
