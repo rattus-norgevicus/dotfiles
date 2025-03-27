@@ -1,0 +1,13 @@
+[Unit]
+Description=RClone ICloud Drive
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=notify
+KillMode=none
+RestartSec=5
+ExecStart=/usr/bin/rclone mount --vfs-cache-mode full icloud-drive: /icloud
+
+[Install]
+WantedBy=default.target
