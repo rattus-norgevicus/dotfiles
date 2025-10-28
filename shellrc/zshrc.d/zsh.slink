@@ -1,3 +1,4 @@
 $HOME/.dotfiles/shellrc/zshrc.d/zshenv=$HOME/.zshenv
 $HOME/.dotfiles/shellrc/zshrc.d=$HOME/.config/zsh.d
 $HOME/.dotfiles/shellrc/zshrc.d/zshrc=$HOME/.config/zsh.d/.zshrc
+$HOME/.dotfiles/shellrc/zshrc.d/zprofile=$HOME/.config/zsh.d/.zprofile
